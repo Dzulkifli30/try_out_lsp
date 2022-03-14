@@ -17,6 +17,7 @@ import Logo4 from "../assets/logo4.png";
 import Logo5 from "../assets/logo5.png";
 import Ngoding1 from "../assets/ngoding1.png";
 import bgKontak from "../assets/bgKontak.png";
+import { Link } from "react-scroll";
 import { ArrowRightIcon, HomeIcon, MenuIcon } from '@heroicons/react/solid'
 
 export default function Dashboard() {
@@ -52,18 +53,26 @@ export default function Dashboard() {
                         <div className="w-1/12 h-screen bg-gray-700 text-white md-max:hidden">
                             <div className="w-full rotate-90 mb-8"><MenuIcon className="w-full p-8" /></div>
                             <div className="flex text-xl rotate-90">
-                                <div className="p-8 px-6 hover:bg-gray-600">
-                                    <button>Home</button>
-                                </div>
-                                <div className="p-8 px-6 hover:bg-gray-600">
-                                    <button>About Me</button>
-                                </div>
-                                <div className="p-8 px-6 hover:bg-gray-600">
-                                    <button>Portfolio</button>
-                                </div>
-                                <div className="p-8 px-6 hover:bg-gray-600">
-                                    <button>Contact</button>
-                                </div>
+                                <Link smooth={true} duration={400} to="home">
+                                    <div className="p-8 px-6 hover:bg-gray-600">
+                                        <button>Home</button>
+                                    </div>
+                                </Link>
+                                <Link smooth={true} duration={400} to="about">
+                                    <div className="p-8 px-6 hover:bg-gray-600">
+                                        <button>About Me</button>
+                                    </div>
+                                </Link>
+                                <Link smooth={true} duration={400} to="portfolio">
+                                    <div className="p-8 px-6 hover:bg-gray-600">
+                                        <button>Portfolio</button>
+                                    </div>
+                                </Link>
+                                <Link smooth={true} duration={400} to="contact">
+                                    <div className="p-8 px-6 hover:bg-gray-600">
+                                        <button>Contact</button>
+                                    </div>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -157,11 +166,11 @@ export default function Dashboard() {
                 {/* company */}
                 <section className="px-32 md-max:px-2">
                     <div className="flex justify-between bg-white rounded-xl shadow-lg relative -top-24 p-10 md-max:p-5 md-max:-top-12">
-                        <img src={Logo1} alt=""  className="md-max:h-10"/>
-                        <img src={Logo2} alt=""  className="md-max:h-10"/>
-                        <img src={Logo3} alt=""  className="md-max:h-10"/>
-                        <img src={Logo4} alt=""  className="md-max:h-10"/>
-                        <img src={Logo5} alt=""  className="md-max:h-10"/>
+                        <img src={Logo1} alt="" className="md-max:h-10" />
+                        <img src={Logo2} alt="" className="md-max:h-10" />
+                        <img src={Logo3} alt="" className="md-max:h-10" />
+                        <img src={Logo4} alt="" className="md-max:h-10" />
+                        <img src={Logo5} alt="" className="md-max:h-10" />
                     </div>
                 </section>
                 {/* section testimonial */}
@@ -198,7 +207,7 @@ export default function Dashboard() {
                     </div>
                 </section>
                 {/* section Contact */}
-                <section className="h-full">
+                <section id="contact" className="h-full">
                     {/* background */}
                     <div className="flex w-full absolute">
                         <img src={Ngoding1} alt="" className="w-1/2 md-max:hidden" />
@@ -207,7 +216,7 @@ export default function Dashboard() {
                     {/* text */}
                     <div className="flex w-full relative">
                         <div className="w-1/2 p-10">
-                            <img src={Ngoding1} alt="" className="md:hidden rounded-lg"/>
+                            <img src={Ngoding1} alt="" className="md:hidden rounded-lg" />
                         </div>
                         <div className="w-1/2 p-32 md-max:p-2">
                             <div className="text-sky-400 text-xl font-bold uppercase md-max:text-lg"><p>Contact Us</p></div>
@@ -224,18 +233,26 @@ export default function Dashboard() {
                     <div className="bg-gray-700 w-full px-32 flex md-max:px-2">
                         <div className="text-lg flex w-1/2 items-center md-max:w-2/10 md-max:text-sm"><p className="text-white">Lawrence</p><p className="text-sky-400">.me</p></div>
                         <div className="w-1/2 flex text-white md-max:w-8/10 md-max:text-sm">
-                            <div className="px-10 py-10 hover:bg-gray-600 md-max:p-4">
-                                <button>Home</button>
-                            </div>
-                            <div className="px-10 py-10 hover:bg-gray-600 md-max:p-4">
-                                <button>About Me</button>
-                            </div>
-                            <div className="px-10 py-10 hover:bg-gray-600 md-max:p-4">
-                                <button>Portfolio</button>
-                            </div>
-                            <div className="px-10 py-10 hover:bg-gray-600 md-max:p-4">
-                                <button>Contact</button>
-                            </div>
+                            <Link smooth={true} duration={400} to="home">
+                                <div className="px-10 py-10 hover:bg-gray-600 md-max:p-4">
+                                    <button>Home</button>
+                                </div>
+                            </Link>
+                            <Link smooth={true} duration={400} to="about">
+                                <div className="px-10 py-10 hover:bg-gray-600 md-max:p-4">
+                                    <button>About Me</button>
+                                </div>
+                            </Link>
+                            <Link smooth={true} duration={400} to="portfolio">
+                                <div className="px-10 py-10 hover:bg-gray-600 md-max:p-4">
+                                    <button>Portfolio</button>
+                                </div>
+                            </Link>
+                            <Link smooth={true} duration={400} to="contact">
+                                <div className="px-10 py-10 hover:bg-gray-600 md-max:p-4">
+                                    <button>Contact</button>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
