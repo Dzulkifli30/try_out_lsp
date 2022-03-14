@@ -24,25 +24,54 @@ export default function Dashboard() {
     return (
         <React.Fragment>
             <div className="">
+                {/* navbar mobile */}
+                <nav className="fixed text-white bg-gray-700 z-20 w-full flex px-4 md:hidden">
+                    <div className="text-xs flex w-3/12 items-center pr-10"><p className="text-white">Lawrence</p><p className="text-sky-400">.me</p></div>
+                    <div className="text-xs w-9/12 flex">
+                        <Link smooth={true} duration={400} to="home">
+                            <div className="p-4 hover:bg-gray-600">
+                                <button>Home</button>
+                            </div>
+                        </Link>
+                        <Link smooth={true} duration={400} to="about">
+                            <div className="p-4 hover:bg-gray-600">
+                                <button>About Me</button>
+                            </div>
+                        </Link>
+                        <Link smooth={true} duration={400} to="portfolio">
+                            <div className="p-4 hover:bg-gray-600">
+                                <button>Portfolio</button>
+                            </div>
+                        </Link>
+                        <Link smooth={true} duration={400} to="contact">
+                            <div className="p-4 hover:bg-gray-600">
+                                <button>Contact</button>
+                            </div>
+                        </Link>
+                    </div>
+                </nav>
                 {/* section Home */}
-                <section id="home" className="relative">
+                <section id="home" className="">
                     {/* background */}
-                    <div className="flex absolute w-full h-screen md-max:h-full">
+                    <div className="flex absolute w-full h-screen md-max:h-1/2">
                         <img src={BgAwal} alt="asd" className="w-5/12 md-max:w-full" />
                         <img src={Kakek} alt="asd" className="w-7/12 md-max:hidden" />
                     </div>
                     <div className="w-full relative flex justify-between">
                         {/* text */}
                         <div className="py-16 px-32 w-11/12 md-max:px-2 md-max:py-4 md-max:w-full">
-                            <div className="pb-24 text-lg flex justify-between md-max:pb-6 md-max:text-sm">
+                            <div className="pb-24 text-lg md-max:pb-6 md-max:text-sm">
                                 <div className="flex"><p className="text-white">Lawrence</p><p className="text-sky-400">.me</p></div>
-                                <div className="p-1 rounded-full bg-white md:hidden"><img src={Kakek} alt="ads" className="rounded-full h-16 w-16" /></div>
-
                             </div>
-                            <div className="py-10 md-max:py-2">
-                                <div className="text-sky-400 text-xl font-bold uppercase md-max:text-base"><p>HELLO GUYS</p></div>
-                                <div className="text-white text-6xl font-semibold uppercase py-10 md-max:py-5 md-max:text-3xl"><p>I’m Dzulkifli</p></div>
-                                <div className="text-white text-lg w-5/12 md-max:text-sm md-max:w-11/12"><p>i'm a professional <strong>Photographer, Videographer and Storyteller </strong>from Indonesia</p></div>
+                            <div className="py-10 md-max:py-2 w-full flex justify-between">
+                                <div className="md-max:w-8/12">
+                                    <div className="text-sky-400 text-xl font-bold uppercase md-max:text-base"><p>HELLO GUYS</p></div>
+                                    <div className="text-white text-6xl font-semibold uppercase py-10 md-max:py-5 md-max:text-3xl"><p>I’m Dzulkifli</p></div>
+                                    <div className="text-white text-lg w-5/12 md-max:text-sm md-max:w-11/12"><p>i'm a professional <strong>Photographer, Videographer and Storyteller </strong>from Indonesia</p></div>
+                                </div>
+                                <div className="md-max:w-4/12 md:hidden">
+                                    <div className="p-1 rounded-full inset-y-0 right-0"><img src={Kakek} alt="ads" className="rounded-full h-32 w-32 m-2" /></div>
+                                </div>
                             </div>
                             <div className="flex w-5/12 justify-start text-xl text-white py-10 md-max:py-12 md-max:w-full md-max:text-sm">
                                 <div className=""><button className="bg-orange-400 py-2 px-6 rounded-lg">Hire Me</button></div>
@@ -229,7 +258,7 @@ export default function Dashboard() {
                     </div>
                 </section>
                 {/* section bottom bar */}
-                <section className="relative md-max:-bottom-24 sm-max:-bottom-8">
+                <section className="relative md-max:-bottom-24 sm-max:-bottom-8 md-max:hidden">
                     <div className="bg-gray-700 w-full px-32 flex md-max:px-2">
                         <div className="text-lg flex w-1/2 items-center md-max:w-2/10 md-max:text-sm"><p className="text-white">Lawrence</p><p className="text-sky-400">.me</p></div>
                         <div className="w-1/2 flex text-white md-max:w-8/10 md-max:text-sm">
