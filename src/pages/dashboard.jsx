@@ -61,7 +61,7 @@ export default function Dashboard() {
                         {/* text */}
                         <div className="py-16 px-32 w-11/12 md-max:px-2 md-max:py-4 md-max:w-full">
                             <div className="pb-24 text-lg md-max:pb-6 md-max:text-sm">
-                                <div className="flex"><p className="text-white">Lawrence</p><p className="text-sky-400">.me</p></div>
+                                <div className="flex hover:md:text-xl"><p className="text-white">Lawrence</p><p className="text-sky-400">.me</p></div>
                             </div>
                             <div className="py-10 md-max:py-2 w-full flex justify-between">
                                 <div className="md-max:w-8/12">
@@ -74,8 +74,8 @@ export default function Dashboard() {
                                 </div>
                             </div>
                             <div className="flex w-5/12 justify-start text-xl text-white py-10 md-max:py-12 md-max:w-full md-max:text-sm">
-                                <div className=""><button className="bg-orange-400 py-2 px-6 rounded-lg">Hire Me</button></div>
-                                <div className="flex items-center text-center"><button className="ml-14 mr-4"><u>View Resume</u></button><ArrowRightIcon className="h-8 md-max:h-4" /></div>
+                                <div className=""><button className="bg-orange-400 py-2 px-6 rounded-lg hover:bg-white hover:text-orange-400">Hire Me</button></div>
+                                <div className="flex items-center text-center"><button className="ml-14 mr-4 hover:text-2xl"><u>View Resume</u></button><ArrowRightIcon className="h-8 md-max:h-4" /></div>
                             </div>
                         </div>
                         {/* navbar right */}
@@ -132,7 +132,7 @@ export default function Dashboard() {
                 {/* Photography */}
                 <section className="relative md-max:hidden">
                     <div className="flex justify-between relative -bottom-40 px-28">
-                        <div className="w-1/3 mx-5 mt-10 bg-white rounded-xl py-12 px-8 shadow-lg">
+                        <div className="w-1/3 mx-5 mt-10 bg-white rounded-xl py-12 px-8 shadow-lg hover:m-4">
                             <div className="text-2xl font-bold flex items-center justify-between pb-5">
                                 <p>Photography</p>
                                 <span className="flex h-8 w-8">
@@ -143,7 +143,7 @@ export default function Dashboard() {
                             <div className="text-gray-400 py-5"><p>Being the savage's bowsman, that is, the person who pulled the bow-oar in his boat (the second one from forward), it was my cheerful duty to.</p></div>
                             <div className="font-medium"><p>150 Project Completed</p></div>
                         </div>
-                        <div className="w-1/3 mx-5 mt-10 bg-white rounded-xl py-12 px-8 shadow-lg">
+                        <div className="w-1/3 mx-5 mt-10 bg-white rounded-xl py-12 px-8 shadow-lg hover:m-4">
                             <div className="text-2xl font-bold flex items-center justify-between pb-5">
                                 <p>Videography</p>
                                 <span className="flex h-8 w-8">
@@ -154,7 +154,7 @@ export default function Dashboard() {
                             <div className="text-gray-400 py-5"><p>I have hinted that I would often jerk poor Queequeg from between the whale and the ship—where he would occasionally fall, from the incessant.</p></div>
                             <div className="font-medium"><p>150 Project Completed</p></div>
                         </div>
-                        <div className="w-1/3 mx-5 mt-10 bg-white rounded-xl py-12 px-8 shadow-lg">
+                        <div className="w-1/3 mx-5 mt-10 bg-white rounded-xl py-12 px-8 shadow-lg hover:m-4">
                             <div className="text-2xl font-bold flex items-center justify-between pb-5">
                                 <p>Storyteller</p>
                                 <span className="flex h-8 w-8">
@@ -183,23 +183,23 @@ export default function Dashboard() {
                             <div className="flex items-center py-8 md-max:text-sm">
                                 <button className="mr-2 font-semibold"><u>View Resume</u></button><ArrowRightIcon className="h-4 md-max:h-3" />
                             </div>
-                            <div className="w-full py-16"><img src={pensil} alt="" className="w-5/6" /></div>
+                            <div className="w-full py-16 hover:rotate-12"><img src={pensil} alt="" className="w-5/6" /></div>
                         </div>
                         {/* bagian kanan */}
                         <div className="w-1/2 py-16 px-20 md-max:px-2 md:max:py-2">
-                            <div className="py-20 md-max:py-5"><img src={Emak} alt="" /></div>
-                            <div className="py-20 md-max:py-5"><img src={Papan} alt="" /></div>
+                            <div className="py-20 md-max:py-5 hover:rotate-12"><img src={Emak} alt="" /></div>
+                            <div className="py-20 md-max:py-5 hover:rotate-12"><img src={Papan} alt="" /></div>
                         </div>
                     </div>
                 </section>
                 {/* company */}
                 <section className="px-32 md-max:px-2">
                     <div className="flex justify-between bg-white rounded-xl shadow-lg relative -top-24 p-10 md-max:p-5 md-max:-top-12">
-                        <img src={Logo1} alt="" className="md-max:h-10" />
-                        <img src={Logo2} alt="" className="md-max:h-10" />
-                        <img src={Logo3} alt="" className="md-max:h-10" />
-                        <img src={Logo4} alt="" className="md-max:h-10" />
-                        <img src={Logo5} alt="" className="md-max:h-10" />
+                        <img src={Logo1} alt="" className="md-max:h-10 m-2 hover:m-0" />
+                        <img src={Logo2} alt="" className="md-max:h-10 m-2 hover:m-0" />
+                        <img src={Logo3} alt="" className="md-max:h-10 m-2 hover:m-0" />
+                        <img src={Logo4} alt="" className="md-max:h-10 m-2 hover:m-0" />
+                        <img src={Logo5} alt="" className="md-max:h-10 m-2 hover:m-0" />
                     </div>
                 </section>
                 {/* section testimonial */}
@@ -264,22 +264,22 @@ export default function Dashboard() {
                         <div className="w-1/2 flex text-white md-max:w-8/10 md-max:text-sm">
                             <Link smooth={true} duration={400} to="home">
                                 <div className="px-10 py-10 hover:bg-gray-600 md-max:p-4">
-                                    <button>Home</button>
+                                    <button className="hover:text-lg">Home</button>
                                 </div>
                             </Link>
                             <Link smooth={true} duration={400} to="about">
                                 <div className="px-10 py-10 hover:bg-gray-600 md-max:p-4">
-                                    <button>About Me</button>
+                                    <button className="hover:text-lg">About Me</button>
                                 </div>
                             </Link>
                             <Link smooth={true} duration={400} to="portfolio">
                                 <div className="px-10 py-10 hover:bg-gray-600 md-max:p-4">
-                                    <button>Portfolio</button>
+                                    <button className="hover:text-lg">Portfolio</button>
                                 </div>
                             </Link>
                             <Link smooth={true} duration={400} to="contact">
                                 <div className="px-10 py-10 hover:bg-gray-600 md-max:p-4">
-                                    <button>Contact</button>
+                                    <button className="hover:text-lg">Contact</button>
                                 </div>
                             </Link>
                         </div>
