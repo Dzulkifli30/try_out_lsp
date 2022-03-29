@@ -8,11 +8,12 @@ import {
   Navigate
 } from "react-router-dom";
 import Dashboard from './pages/dashboard';
+import Lsp from './pages/lsp';
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Dashboard />} />
+      <Route path="/" element={<Lsp />} />
     </Routes>
 
   );

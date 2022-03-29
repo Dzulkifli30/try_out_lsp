@@ -44,6 +44,19 @@ module.exports = {
         '9/10': '90%',
         '25/100': '25%',
       },
+      fontFamily: {
+        poppins: ["Poppins"],
+        bahnschrift: ['Bahnschrift'],
+        Montserrat: ['Montserrat'],
+      },
+      fontWeight: {
+        'extrablack' : 'bolder'
+      },
+      colors: {
+        'hijau' : '#38E569',
+        'blues' : '#0CA1F5',
+        'oren' : '#F0BF12'
+      }
     },
   },
   plugins: [],
